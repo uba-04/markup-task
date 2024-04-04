@@ -1,0 +1,27 @@
+footer {
+    display: block;
+}
+
+.footer-content {
+    display: flex;
+    justify-content:space-between;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-logo {
+    /* Adjust the size of your logo */
+    width: 35px;
+    height: 35px;
+}
+
+.link-group {
+    display: block;
+}
+
+.footer-bottom {
+   display: flex;
+}

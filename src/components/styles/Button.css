@@ -1,0 +1,16 @@
+.custom-button {
+    transition: all .3s ease;
+    color: white;
+  }
+  
+  .custom-button:hover {
+    filter: brightness(90%);
+  }
+  
+  .custom-button:disabled {
+    background-color: #cccccc;
+  }
+  
+  .custom-button:active {
+    filter: brightness(75%);
+  }
