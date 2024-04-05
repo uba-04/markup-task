@@ -16,18 +16,19 @@ const SignUpPage = () => {
   if (role === '') {
     return (
       <div>
+        <Breadcrumb path="/signup" />
         <button onClick={() => setRole('student')}>Register as Student</button>
         <button onClick={() => setRole('trainer')}>Register as Trainer</button>
-        <Breadcrumb path="/signup" />
+        <p>This is the Sign Up page.</p>
       </div>
     );
   }
 
   return (
     <form onSubmit={handleSubmit}>
+      <Breadcrumb path="/signup" />
       <input type="text" name="firstName" placeholder="First Name" onChange={handleChange} required />
       <input type="text" name="lastName" placeholder="Last Name" onChange={handleChange} required />
-      <Breadcrumb path="/signup" />
       
       {role === 'student' && (
         <>

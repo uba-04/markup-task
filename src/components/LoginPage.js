@@ -1,7 +1,6 @@
 import React,{useState} from 'react';
 import { Link } from 'react-router-dom';
 import './styles/style.css';
-import MyAccount from './MyAccount';
 import Table from './Table';
 import Breadcrumb from './Breadcrumb';
 import ModalBox from './Modalbox';
@@ -37,6 +36,7 @@ function LoginPage() {
 
     return (
         <div className="container">
+            <Breadcrumb path="/login" />
             <br/>
             <h2>Sign in</h2>
             <p>Welcome back</p>
@@ -73,12 +73,7 @@ function LoginPage() {
             <br/>
             <p>OR</p>
             <p>Don't have an account? <Link to="/signup" className="signup-link">Sign up</Link>.</p>
-            <MyAccount user={{ 
-                firstName: 'John', 
-                lastName: 'Doe'
-                }}/>
             <Table/>
-            <Breadcrumb path="/" />
             <ModalBox/>
             <Toaster/>
             <DatePicker/>

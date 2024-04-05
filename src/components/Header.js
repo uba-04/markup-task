@@ -19,7 +19,7 @@ const Header = () => {
         </ul>
       </nav>
       <div className="auth-buttons">
-        <button><Link to="/">Sign In</Link></button>
+        <button><Link to="/login">Log In</Link></button>
         <button><Link to="/signup">Join Us</Link></button>
       </div>
     </header>

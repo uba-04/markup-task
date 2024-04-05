@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Breadcrumb from './Breadcrumb';
 
 function MyAccount ({ user }) {
     const [editMode, setEditMode] = useState(false);
@@ -10,6 +11,7 @@ function MyAccount ({ user }) {
 
     return (
         <div className="account-settings">
+            <Breadcrumb path="/my-account"/>
             <h2>Account Settings</h2>
             {editMode ? (
                 <button onClick={saveChanges}>Save Changes</button>
